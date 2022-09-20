@@ -141,7 +141,7 @@ for i = 1:numExamples
     trainLabels(:,:,:,i) = est_grid;
 
     % Data generation tracker
-    if mod(i,round(numExamples/25)) == 0
+    if mod(i,round(numExamples/8)) == 0
         fprintf('%3.2f%% complete\n',i/numExamples*100);
     end
 end
