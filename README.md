@@ -8,7 +8,7 @@ In this hands-on workshop you will write and run code entirely in the browser us
 
 This interactive hands-on session will include the following:
 
-* Familiarize yourself with with MATLAB Online and AI tools.
+* Familiarize yourself with MATLAB Online and AI tools.
 * Create and evaluate necessary components to succeed in AI modeling , by implementing an example of Modulation Classification
 * Deep dive into an advanced, domain-specific application that showcases a complete workflow for accomplishing 5G Channel Estimation
 
