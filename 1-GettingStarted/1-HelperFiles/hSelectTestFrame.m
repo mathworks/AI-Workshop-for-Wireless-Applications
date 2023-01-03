@@ -1,4 +1,4 @@
-function modFrame = hSelectTestFrame(rxFrames,rxLabels,modType)
+function frame = hSelectTestFrame(rxFrames,rxLabels,modType)
 % Plot Spectrogram of a frame
 
 % hRandomFrame(rxFrames,rxLabels,modType) slects a frame from the 
@@ -7,14 +7,12 @@ function modFrame = hSelectTestFrame(rxFrames,rxLabels,modType)
 % Copyright 2022 The MathWorks, Inc.
 
 % Select a random frame from the list
-allModFrames = rxFrames(:,:,:,rxLabels == modType);
-modFrame = allModFrames(:,:,:,randi([1 40]));
+allModFrames = rxFrames(rxLabels == modType);
+frame = allModFrames{randi([1 40])};
 
 fs = 200e3;             % Sampling Frequency 
 sps = 8;                % Symbols per frame
-spf = size(modFrame,2); % Samples per frame
-
-frame = complex(modFrame(:,:,1),modFrame(:,:,2));
+spf = size(frame,2); % Samples per frame
 
 % Plot Spectrogram
 figure

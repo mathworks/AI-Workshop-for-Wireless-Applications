@@ -8,7 +8,7 @@ function hPlotSpectogram(rxFrames,rxLabels)
 modulationTypes = categorical(["BPSK", "QPSK", "GFSK","PAM4","16QAM", "64QAM"]);
 
 % Select a random frame to view 
-idx = randi([1 size(rxFrames,4)/6]);
+idx = randi([1 size(rxFrames,1)/6]);
 
 fs = 200e3; %Sampling Frequency 
 sps = 8;    % Symbols per frame
@@ -17,11 +17,11 @@ figure
 for modType=1:length(modulationTypes)
 
     % Select Modulation Type 
-    modSamples = rxFrames(:,:,:,rxLabels == modulationTypes(modType));
+    allModFrames = rxFrames(rxLabels == modulationTypes(modType));
 
     % Select Subplot
     subplot(3, 2, modType);
-    frame = complex(modSamples(:,:,1,idx),modSamples(:,:,2,idx));
+    frame = allModFrames{idx};
     spf = size(frame,2);
 
     % Plot Spectrogram

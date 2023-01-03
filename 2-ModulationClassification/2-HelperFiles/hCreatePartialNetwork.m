@@ -3,9 +3,9 @@ function layers = hCreatePartialNetwork()
 % Copyright 2022 The MathWorks, Inc.
 
 layers = [
-  batchNormalizationLayer
   reluLayer
-  maxPooling2dLayer([1 2], 'Stride', [1 2])  
+  convolution1dLayer(8, 16,"Name","conv1d_2")
+  reluLayer
+  globalMaxPooling1dLayer
   fullyConnectedLayer(6)
   softmaxLayer];
-end
