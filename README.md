@@ -1,5 +1,7 @@
 # AI Workshop for Wireless Applications 
 
+[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=mathworks/AI-Workshop-for-Wireless-Applications)
+
 ## Agenda
 
 Artificial intelligence (AI) is rapidly becoming a critical component of many engineering systems and disciplines today. In the field of Wireless, AI is being used to design and develop smarter ways to model physical layers, optimize performance of wireless systems and networks and address new 6G design challenges .
