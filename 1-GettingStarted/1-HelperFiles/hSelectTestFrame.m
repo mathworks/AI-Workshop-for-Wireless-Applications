@@ -4,7 +4,7 @@ function frame = hSelectTestFrame(rxFrames,rxLabels,modType)
 % hRandomFrame(rxFrames,rxLabels,modType) slects a frame from the 
 % list rxFrames and plots a spectrogram
 
-% Copyright 2022 The MathWorks, Inc.
+% Copyright 2024 The MathWorks, Inc.
 
 % Select a random frame from the list
 allModFrames = rxFrames(rxLabels == modType);

@@ -1,7 +1,7 @@
 function hPlotChEstimates(interpChannelGrid,estChannelGrid,estChannelGridNN,...
     estChannelGridPerfect)
 % Plot the different channel estimates and display the measured MSE
-% Copyright 2022 The MathWorks, Inc.
+% Copyright 2024 The MathWorks, Inc.
 
 % Calculate the mean squared error (MSE) of each estimation method.
 neural_mse = mean(abs(estChannelGridPerfect(:) - estChannelGridNN(:)).^2);

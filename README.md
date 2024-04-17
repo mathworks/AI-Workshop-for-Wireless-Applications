@@ -16,7 +16,9 @@ This interactive hands-on session will include the following:
 
 MathWorks instructors and teaching assistants (TAs) will be available throughout the session to guide you. If the event is being held onsite, please bring your laptop and install the Google Chrome browser beforehand.
 
-Copyright 2022 The MathWorks, Inc.
+Copyright 2024 The MathWorks, Inc.
+
+Please Note: The workshop is updated for MATLAB R2024a and will need to be modified in order to work in older versions. 
 
 ## Relevant products
 * [MATLAB](https://www.mathworks.com/products/matlab.html)

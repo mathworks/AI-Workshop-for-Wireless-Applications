@@ -7,7 +7,7 @@ function [trainData,trainLabels, valData, valLabels] = hGenerateTrainingData(dat
 % Use perfect channel information to create the label data. The function
 % returns 4 arrays - the training data and labels as well validation data
 % and labels.
-% Copyright 2022 The MathWorks, Inc.
+% Copyright 2024 The MathWorks, Inc.
 
 % Set the random seed for reproducibility (this has no effect if a GPU is
 % used)

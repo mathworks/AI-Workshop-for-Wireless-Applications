@@ -3,7 +3,7 @@ function hPlotSpectogram(rxFrames,rxLabels)
 % rxFrames: Frames from different modulations 
 % rxLabels: Modulation Type corresponding to each frame
 %
-% Copyright 2022 The MathWorks, Inc.
+% Copyright 2024 The MathWorks, Inc.
 
 modulationTypes = categorical(["BPSK", "QPSK", "GFSK","PAM4","16QAM", "64QAM"]);
 
@@ -22,7 +22,7 @@ for modType=1:length(modulationTypes)
     % Select Subplot
     subplot(3, 2, modType);
     frame = allModFrames{idx};
-    spf = size(frame,2);
+    spf = size(frame,1);
 
     % Plot Spectrogram
     spectrogram(frame,kaiser(sps),0,spf,fs,'centered');
