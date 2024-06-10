@@ -12,7 +12,7 @@ frame = allModFrames{randi([1 40])};
 
 fs = 200e3;             % Sampling Frequency 
 sps = 8;                % Symbols per frame
-spf = size(frame,2); % Samples per frame
+spf = size(frame,1); % Samples per frame
 
 % Plot Spectrogram
 figure
